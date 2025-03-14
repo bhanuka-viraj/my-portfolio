@@ -5,86 +5,270 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhanuka Viraj - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <header>
-    <nav>
+    <div class="logo">BV</div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav id="nav-menu">
         <ul>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#contact">Contact me</a></li>
         </ul>
     </nav>
+    <div class="appointment">
+        <span>Colombo, Sri Lanka</span>
+        <button>Appointment +</button>
+    </div>
 </header>
 
-<main>
-    <section id="hero">
-        <h1>Hello! I’m Bhanuka Viraj</h1>
-        <p>A software developer based in Colombo, Sri Lanka</p>
-        <button>Talk with me</button>
-    </section>
+<section id="hero">
+    <div class="hero-content">
+        <div class="hero-image">
+            <img src="assets/Bhanuka.jpg" alt="Profile Image">
+            <h2>Hello! I'm Bhanuka Viraj</h2>
+        </div>
+        <div class="hero-text">
+            <h3>A software developer based in Colombo, Sri lanka</h3>
+            <p>With a passion for solving complex problems and a commitment to writing clean, efficient code, I strive to deliver innovative software solutions that drive impact and enhance user experiences</p>
+            <div class="hero-buttons">
+                <button class="button-secondary">Talk with me</button>
+                <button class="button-primary">See my work</button>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section id="about">
-        <p>With a passion for solving complex problems and a commitment to writing clean, efficient code...</p>
-        <button>See my work</button>
-    </section>
 
-    <section id="experience">
-        <h2>Working Experience</h2>
-        <article>
-            <p>Software Developer at CodeHub (Feb 2024 - Jan 2025)</p>
-            <p>Software Developer at Voyage Vibes (Feb 2024 - Jan 2025)</p>
-        </article>
-    </section>
+<section id="services" class="section">
+    <h2>I can help you with</h2>
+    <div class="container">
+        <div class="service-item">
+            <h3>Fully functional web application development</h3>
+            <p>Crafting immersive and engaging full-web application that captivate audiences and deliver a seamless user experience</p>
+            <div class="service-images">
+                <img src="assets/web-dev-pics/1.png" alt="Web Development Example 1">
+                <img src="assets/web-dev-pics/2.png" alt="Web Development Example 2">
+            </div>
+        </div>
+        <div class="service-item">
+            <h3>Mobile application development</h3>
+            <p>Crafting immersive and engaging full-Mobile application that captivate audiences and deliver a seamless user experience</p>
+            <div class="service-images">
+                <img src="assets/web-dev-pics/1.png" alt="Mobile Development Example 1">
+                <img src="assets/web-dev-pics/2.png" alt="Mobile Development Example 2">
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section id="awards">
-        <h2>Awards & Recognition</h2>
-        <article>
-            <p>Final Project (3rd place) at IJSE - Nov 2024</p>
-            <p>Site of the Day at Awwwards - Jan 2025</p>
-        </article>
-    </section>
+<section id="stats" class="section">
+    <div class="content">
+        <h2>Experience with a variety of projects and skills</h2>
+        <p>Versatile experience across diverse projects and industries, bringing adaptability and value skills to any task</p>
+        <div class="stats-buttons">
+            <button class="button-secondary">Talk with me</button>
+            <button class="button-primary">See my work</button>
+        </div>
+    </div>
+    <div class="stats-grid">
+        <div class="stat-item">
+            <div class="icon">
+                <svg viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></svg>
+            </div>
+            <div class="text">
+                <h3>20+</h3>
+                <p>Projects completed</p>
+            </div>
+        </div>
+        <div class="stat-item">
+            <div class="icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+            </div>
+            <div class="text">
+                <h3>20+</h3>
+                <p>Applications developed</p>
+            </div>
+        </div>
+        <div class="stat-item">
+            <div class="icon">
+                <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V18h14v-1.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <div class="text">
+                <h3>15+</h3>
+                <p>Happy clients</p>
+            </div>
+        </div>
+        <div class="stat-item">
+            <div class="icon">
+                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            </div>
+            <div class="text">
+                <h3>1+</h3>
+                <p>Years experience</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section id="services">
-        <h2>I can help you with</h2>
-        <ul>
-            <li>Web and Mobile Application Development</li>
-            <li>Experience across diverse projects and industries</li>
-        </ul>
-    </section>
+<section id="experience" class="section">
+    <div class="container">
+        <div class="experience">
+            <h2>Working Experience</h2>
+            <div class="job">
+                <div class="job-icon">CH</div>
+                <div class="job-details">
+                    <h4>Software Developer at CodeHub</h4>
+                    <p>2024 February - 2025 January</p>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job-icon">VB</div>
+                <div class="job-details">
+                    <h4>Software Developer at Voyage Vibes</h4>
+                    <p>2023 February - 2025 January</p>
+                </div>
+            </div>
+        </div>
+        <div class="awards">
+            <h2>Awards & Recognition</h2>
+            <div class="award">
+                <div class="award-icon">IJ</div>
+                <div class="award-details">
+                    <h4>Final Project (1st Place) at IJSE</h4>
+                    <p>2024 December</p>
+                </div>
+            </div>
+            <div class="award">
+                <div class="award-icon">W.</div>
+                <div class="award-details">
+                    <h4>Site of the Day at Awards</h4>
+                    <p>2025 January</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section id="stats">
-        <h2>Experience & Projects</h2>
-        <ul>
-            <li>20+ Projects Completed</li>
-            <li>15+ Happy Clients</li>
-            <li>1+ Years Experience</li>
-            <li>20+ Applications Developed</li>
-        </ul>
-    </section>
 
-    <section id="projects">
+
+
+<section id="selected-works" class="section">
+    <div class="section-header">
         <h2>Selected Works</h2>
-        <article class="project">
-            <h3>Jottie</h3>
-            <p>Notes taking and task managing application - Nov 2024</p>
-            <button>View</button>
-        </article>
-    </section>
-</main>
+        <button class="button-view-all">View all</button>
+    </div>
+    <div class="work-grid">
+        <div class="work-card">
+            <div class="work-image">
+                <img src="assets/assignment.png" alt="Jottie Project">
+                <div class="work-overlay">
+                    <button class="button-view">View Project</button>
+                </div>
+            </div>
+            <div class="work-info">
+                <h3>Jottie</h3>
+                <p class="work-description">Notes taking and task managing application</p>
+                <p class="work-date">November - 2024</p>
+            </div>
+        </div>
+        <div class="work-card">
+            <div class="work-image">
+                <img src="assets/assignment.png" alt="Jottie Project">
+                <div class="work-overlay">
+                    <button class="button-view">View Project</button>
+                </div>
+            </div>
+            <div class="work-info">
+                <h3>Jottie</h3>
+                <p class="work-description">Notes taking and task managing application</p>
+                <p class="work-date">November - 2024</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<footer>
-    <section id="contact">
-        <h2>Have a project?</h2>
-        <button>Talk with me</button>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email" required>
-            <button type="submit">Send</button>
-        </form>
-        <p>Contact Details: +94 0754787838 | bhanukaviraj22@gmail.com</p>
-    </section>
+<section id="assignments" class="section">
+    <div class="section-header">
+        <h2>Assignments</h2>
+        <button class="button-view-all">View all</button>
+    </div>
+    <div class="work-grid">
+        <div class="work-card">
+            <div class="work-image">
+                <img src="assets/assignment.png" alt="Jottie Assignment">
+                <div class="work-overlay">
+                    <button class="button-view">View Project</button>
+                </div>
+            </div>
+            <div class="work-info">
+                <h3>Jottie</h3>
+                <p class="work-description">Notes taking and task managing application</p>
+                <p class="work-date">November - 2024</p>
+            </div>
+        </div>
+        <div class="work-card">
+            <div class="work-image">
+                <img src="assets/assignment.png" alt="Jottie Assignment">
+                <div class="work-overlay">
+                    <button class="button-view">View Project</button>
+                </div>
+            </div>
+            <div class="work-info">
+                <h3>Jottie</h3>
+                <p class="work-description">Notes taking and task managing application</p>
+                <p class="work-date">November - 2024</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer id="contact" class="section">
+    <h6>Have a project?</h6>
+    <h2>Talk with me</h2>
+    <form>
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Email" required>
+        <button type="submit" class="button-primary">Send</button>
+    </form>
+    <p>Contact Details: +94 0754787838 | bhanukaviraj22@gmail.com</p>
+    <p>© 2025 Bhanuka Viraj. All rights reserved.</p>
 </footer>
+
+<script>
+    const burgerMenu = document.querySelector('.burger-menu');
+    const nav = document.querySelector('#nav-menu');
+    
+    burgerMenu.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target) && !burgerMenu.contains(e.target)) {
+            burgerMenu.classList.remove('active');
+            nav.classList.remove('active');
+        }
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            burgerMenu.classList.remove('active');
+            nav.classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>
